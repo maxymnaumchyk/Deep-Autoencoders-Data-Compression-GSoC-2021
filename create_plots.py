@@ -17,7 +17,7 @@ def plot_initial_data(input_data, num_variables, normalized=False):
     prefix = 'ak5PFJets_'
 
     if num_variables == 24:
-        save_dir = "D:\Desktop\preprocessed_data_plots\d24"
+        save_dir += "\d24"
 
         variable_list = ['pt_', 'eta_', 'phi_', 'mass_', 'mJetArea',
                          'mChargedHadronEnergy', 'mNeutralHadronEnergy',
@@ -43,7 +43,7 @@ def plot_initial_data(input_data, num_variables, normalized=False):
                     prefix + 'mChargedMuEnergy', prefix + 'mNeutralEmEnergy', prefix + 'mChargedMultiplicity',
                     prefix + 'mNeutralMultiplicity']
     else:
-        save_dir = "D:\Desktop\GSoC-ATLAS\preprocessed_data_plots\d19"
+        save_dir += "\d19"
 
         variable_list = ['pt_', 'eta_', 'phi_', 'mass_', 'mJetArea',
                          'mChargedHadronEnergy', 'mNeutralHadronEnergy',
