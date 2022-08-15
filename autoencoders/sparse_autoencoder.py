@@ -177,6 +177,7 @@ def train(variables, train_data, test_data, learning_rate, reg_param, RHO, l1, e
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
+    plt.yscale("log")
     plt.savefig('D:\Desktop\GSoC-ATLAS\learning_curves\sae_loss.png')
     plt.show()
 
